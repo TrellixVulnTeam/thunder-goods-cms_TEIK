@@ -1,0 +1,47 @@
+.square_board{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  .player_note{
+    font-size: 26px;
+  }
+  .operation_list{
+    font-size: 22px;
+    position: absolute;
+    right: -60%;
+    top: 20%;
+    li{
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      cursor: pointer;
+      list-style: none;
+      background: #fff;
+      width: 80px;
+      text-align: center;
+      border-radius: 8px;
+      transition: background 0.2s linear 0s;
+      &:hover {
+       background: #ff6900;
+      }
+    }
+  }
+  .re_play{
+    width: 80px;
+    height: auto;
+    margin-top: 20px;
+  }
+  .square_row{
+    margin-bottom: -4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .square_item{
+      width: 80px;
+      height: 80px;
+      font-size: 32px;
+      margin-right: -1px;
+    }
+  }
+}
